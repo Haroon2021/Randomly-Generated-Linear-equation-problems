@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"> 
     <title>Linear equations quiz</title>
 </head>
 <body>
@@ -12,20 +13,14 @@
     <div class = "question"></div>
     <br>
 
-    <p>Please input the answer into the box and press the "Check answer" button</p>
-
-    <!-- <form>
-
-        <label id="Avalue"> Answer </label>
-        <input type="text" id="Aforlinearequation" name="A"><br><br>
-
-        <button id ="generatequestionbutton" onclick="generatequestion()">Check Answer</button>
-    </form> -->
+    <p>Please input the answer (to 2 decimal places) into the box and press the "Check answer" button</p>
 
     <input type="text" id="guess">
 
-    <button onclick="checkAnswer()">Guess</button>
+    <button onclick="checkAnswer()">Check Answer</button>
 	<p class="result"></p>
+
+    <button id="refresh-btn">Press here to try another question</button>
 
     <script src="app.js" defer ></script>
 

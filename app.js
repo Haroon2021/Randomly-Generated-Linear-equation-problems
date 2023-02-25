@@ -1,7 +1,3 @@
-    // const a = parseInt(1) ;
-    // const b = parseFloat(-10);
-    // const c = parseFloat(5);
-
     const a = Math.floor(Math.random() * (10 - -10 + 1)) + -10;
     console.log(a)
     if (a == 0) {
@@ -12,7 +8,6 @@
     const c = Math.floor(Math.random() * (10 - -10 + 1)) + -10;
 
     const answer = (c-b)/a
-
 
     console.log('answer is '+ answer);
     console.log('does answer = 15?');
@@ -50,7 +45,7 @@ const checkAnswer = (e) => {
     console.log("answer");
     console.log(answer.type);
     
-    if (userGuess == answer) {
+    if (userGuess.toFixed(2) == answer.toFixed(2)) {
         document.querySelector(".result").innerText = `
         Well done! Your answer is correct!`
     } else {
@@ -59,3 +54,8 @@ const checkAnswer = (e) => {
     }
     
 };
+
+const refreshButton = document.getElementById("refresh-btn");
+  refreshButton.addEventListener("click", function() {
+    location.reload();
+  });
