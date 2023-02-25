@@ -8,12 +8,24 @@
 </head>
 <body>
     <h1>Linear equation quiz</h1>
+    <p>The equation to solve is:</p>
+    <div class = "question"></div>
+    <br>
 
-    <button id ="generatequestionbutton" onclick="generatequestion()">Generate Random Question</button>
+    <p>Please input the answer into the box and press the "Check answer" button</p>
 
-    <div id = "divone"></div>
-    <div id = "divtwo"></div>
-    <div id = "divthree"></div>
+    <!-- <form>
+
+        <label id="Avalue"> Answer </label>
+        <input type="text" id="Aforlinearequation" name="A"><br><br>
+
+        <button id ="generatequestionbutton" onclick="generatequestion()">Check Answer</button>
+    </form> -->
+
+    <input type="text" id="guess">
+
+    <button onclick="checkAnswer()">Guess</button>
+	<p class="result"></p>
 
     <script src="app.js" defer ></script>
 
