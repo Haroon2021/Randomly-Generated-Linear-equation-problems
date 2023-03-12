@@ -1,3 +1,13 @@
 body {
-    background-color: aqua;
+    background-color: #118ab2;
+}
+
+.incorrectresult {
+    background: white;
+    color: #ef476f;
+}
+
+.correctresult {
+    background: white;
+    color: #06d6a0;  
 }
